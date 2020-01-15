@@ -1,0 +1,169 @@
+/*********** ESTILOS GENERALES (PAGINA GENERAL, CONTENEDOR DEL CHAT)  ***********/
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.chat-container{
+  width: 291px;
+  height: 400px;
+  background:  url('assets/chat.png')  no-repeat ;
+  box-shadow: 10px 10px 8px -6px rgba(214,214,214,1);
+  margin: 10vh 33vw;
+  border-radius: 0px 0px 10px 10px;
+}
+/*********** ESTILOS DEL HEADER (LOGO, TITULO, BOTON PARA CERRAR) ***********/
+.chat-header{
+  width: 100%;
+  height: 52px;
+  background: #32A6D1  ;
+  border-radius: 10px 0px 0px 0px;
+  display: flex ;
+}
+
+.logo{
+  border-radius: 20px;
+  width: 35px;
+  height: 35px; 
+  display: inline-block;
+  margin-top: 9px;
+  margin-left: 17px; 
+}
+
+.titulo{
+  background-color: #32A6D1;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  align-self: center;
+  width: 124px;
+  margin-left: 12px;
+}
+
+.close-button{
+  width: 26px;
+  height: 34px;
+  background-color: #32A6D1;
+  margin-left: 65px;
+  margin-top: 12px; 
+  cursor: pointer;
+}
+
+/*********** ESTILOS DEL BODY (MENSAJES, ETIQUETA) ***********/
+.chat-body{
+  height: 68%;
+  width: 100%;
+  display: flex;
+}
+
+ul{
+  margin-top: 0px;
+}
+
+li{
+  list-style: none;
+  width: 224px;
+  height: 48px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 3px #00000029;
+  border-radius: 0px 5px 5px 5px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+}
+
+p{
+  width: 204px;
+  height: 29px;
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 0;
+  color: #525252;
+  margin-left: 0px;
+}
+
+.message-label{
+  margin-bottom: 60px;
+  text-align: left;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #707070;
+}
+
+.message2{
+  width: 156px;
+  height: 48px;
+  background: #D8EEFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 3px #00000029;
+  border-radius: 5px 0px 5px 5px;
+  margin-left: 80px;
+  text-align:right;
+}
+.message2 > span {
+  order: 2;  
+}
+.message2 > p {
+  margin-left: 10px;
+  text-align: end;
+  
+}
+
+.chat-label{
+  width: 85px;
+  height: 16px;
+  text-align: center;
+  font-size: 9px;
+  font-weight:bolder;
+  letter-spacing: 0;
+  color: #737373;
+  margin-left: 33%;
+}
+/*********** ESTILOS DEL FOOTER (INPUT, BOTON ENVIAR) ***********/
+.chat-footer{
+  display: flex;
+}
+
+input{
+  margin-top: 6px;
+  padding-left: 10px;
+  width: 220px;
+  height: 30px;
+  background: #FFFFFF ;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 15px;
+  border: seashell;
+  opacity: 1;
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 0;
+  color: #2C2C2C;
+  margin-left: 12px;
+  
+}
+
+::placeholder{
+  color: #2C2C2C;
+  opacity: 0.47;
+}
+
+button{
+  width: 30px;
+  height: 30px;
+  background: #32A6D1 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  border-radius: 50%;
+  border: none;
+  align-self: flex-end;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+button > img{
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+  margin-right: 1px;
+  
+}
